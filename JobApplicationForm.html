@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Job Application Form</title>
+</head>
+
+<body style="border: 1px solid black; padding: 20px;">
+    <h1> &#10020; ChiPi Technologies - Job Application Form &#10020;</h1>
+    <form action="#">
+        <lavel for="Fname">Full Name : </lavel><br>
+        <input type="text" id="Fname" placeholder="Enter your full name"><br><br>
+
+        <lavel for="email">Email</lavel><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <lavel for="phone">Phone Number</lavel><br>
+        <input type="tel" id="phone" placeholder="Enter your phone number"><br><br>
+
+        <label for="Position">Position Applied For :</label><br>
+        <select id="position">
+            <option value="sel" selected>Select the position you are applying for</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="UI/UX Designer">UI/UX Designer</option><br>
+        </select><br><br>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" accept=".pdf, .doc, .docx"><br><br>
+
+        <div class="gender">
+            <h3>Gender</h3>
+            <input type="radio" id="Male" name="Gender">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender">
+            <label for="Female">Female</label>
+            <input type="radio" id="Other" name="Gender">
+            <label for="Other">Other</label><br><br>
+
+        </div>
+
+        <div class="skills">
+            <h3>Skills</h3>
+            <input type="checkbox" id="Java" ">
+            <label for=" Java">Java</label><br>
+
+            <input type="checkbox" id="Python">
+            <label for="Python">Python</label><br>
+
+            <input type="checkbox" id="JavaScript" ">
+            <label for=" JavaScript">JavaScript</label><br>
+
+            <input type="checkbox" id="HTML">
+            <label for="HTML">HTML</label><br>
+
+            <input type="checkbox" id="CSS">
+            <label for="CSS">CSS</label><br>
+
+            <input type="checkbox" id="SQL">
+            <label for="SQL">SQL</label><br>
+
+            <input type="checkbox" id="C++">
+            <label for="C++">C++</label><br>
+        </div><br>
+        <div class="btn">
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="clr">Clear</button>
+        </div>
+        <p> &#10020; 2025 Chipi Technologies .All rights reserved &#10020;</p> <br>
+
+    </form>
+</body>
+
+</html>
