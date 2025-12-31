@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face book SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+
+    <h1>Facebook</h1>
+    <div class="container">
+
+        <div class="Create-account">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+        </div>
+        <hr>
+        <div class="user-name">
+            <div class="fname">
+                <input type="text" name="firstname" id="FName" placeholder="First name">
+            </div>
+            <div class="lname">
+                <input type="text" name="lastname" id="LName" placeholder="Last name">
+            </div>
+            
+        </div>
+        <div class="user-name">
+        <p id="firstnameError"></p>
+        <p id="lastnameError"></p>
+        </div>
+        
+        <div class="email-password">
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email address or phone number">
+        </div>
+        <p id="emailError" ></p>
+        <div>
+            <input type="password" name="password" id="Password" placeholder="New password">
+        </div>
+        <p id="PassError"></p>
+        </div>
+        gender:
+        <br>
+        <div class="gender">
+            <div>
+                <input type="radio" name="gender" id="male"checked >
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" >
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="custom">
+                <label for="custom">Custom</label>
+
+            </div>
+        </div>
+        <p id="GenderError"></p>
+
+
+
+        Date of Birth:
+        <div class="date-of-birth">
+            <select name="Date" id="Date" title="date">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select name="month" id="month" title="name">
+                <option value="J">Jan</option>
+                <option value="F">Feb</option>
+                <option value="M">Mar</option>
+                <option value="A">Apr</option>
+                <option value="M">May</option>
+                <option value="J">June</option>
+                <option value="J">July</option>
+                <option value="A">Aug</option>
+                <option value="S">Sep</option>
+                <option value="O">Oct</option>
+                <option value="N">Nov</option>
+                <option value="D">Dec</option>
+            </select>
+            <select name="year" id="year" title="year">
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select>
+
+
+            <div class="text">
+                <p>People who use our service may have uploaded your contact information to Facebook <b>Learn more.</b></p><br>
+                <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <br>
+
+
+            <div class="signup-button">
+                <button type="submit" id="signupButton" >Sign Up</button>
+                <p><a href="login.html">Already have an account ?</a></p>
+        </div>
+        <p id="Sign-Up=Successful!" ></p>
+    </div>
+
+
+<script src="SignUp.js"></script>
+</body>
+
+</html>
