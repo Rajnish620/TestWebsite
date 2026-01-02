@@ -5,7 +5,7 @@ const Lastname = document.getElementById("LName");
 const FirstnameError = document.getElementById("firstnameError");
 const LastnameError = document.getElementById("lastnameError");
 const SignUpButton = document.getElementById("signupButton");
-const SignUpSuccess = document.getElementById("Sign-Up=Successful!");
+const SignUpSuccess = document.getElementById("Sign-Up-Successful!");
 const email = document.getElementById("email");
 const emailError = document.getElementById("emailError");
 const Password = document.getElementById("Password");
