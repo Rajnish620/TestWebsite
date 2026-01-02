@@ -4,6 +4,8 @@
         padding: 0;
         font-family: Arial, sans-serif;
     }
+    
+    
     h1 {
         text-align: center;
         font-size:50px;
@@ -12,13 +14,13 @@
     }
 
     .container {
-        width: 400px;
+        width:30%;
         margin: auto;
         margin-bottom: 20px;
         padding: 10px 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #cccccc;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px  100px 10px rgba(0, 0, 0, 0.1);
         
     }
     .Create-account {
@@ -38,23 +40,23 @@
         display: flex;
         justify-content: space-between;
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
 
     }
 
     .user-name input {
-        width: 84%;
+        width: 80%;
         padding: 13px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
+        border: 1px solid #cccccc;
         border-radius: 5px;
         font-size: 16px;
     }
 
-    .date-of-birth select {
-        width: 30%;
-        padding: 10px;
-        margin: 5px 5px 15px 0;
+    .email-password input {
+        width: 90%;
+        padding: 13px;
+        margin-bottom:20px;
+        border: 1px solid #cccccc;
         border-radius: 5px;
         font-size: 16px;
     }
@@ -62,39 +64,42 @@
     .gender {
         margin-top: 8px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        gap: 10px;
+        gap: 5px;
         margin-bottom: 15px;
         
     }
 
     .gender div {
-
-        border: 1px solid #ccc;
-        padding: 10px 20px 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        margin-right: 5px;
+        border: 1px solid #cccccc;
+        padding: 10px 15px 10px 15px;
         border-radius: 5px;
     }
 
-    .email-password input {
-        width: 92%;
-        padding: 13px;
-        margin-bottom:20px;
-        border: 1px solid #ccc;
+    .date-of-birth select {
+        width: 31%;
+        padding: 10px;
+        margin: 10px 2px;
         border-radius: 5px;
         font-size: 16px;
+        border: 1px solid #cccccc;
+
     }
-    .text p {
-        font-size: 12px;
-        color: gray;
-    }
+    
+    
     .signup-button{
         margin-bottom: 10px;
 
     }
-    .signup-button button {
+   .signup-button button {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     background-color: rgb(0, 153, 255);
     color: white;
     border: none; 
@@ -106,6 +111,12 @@
     .signup-button button:hover {
         background-color: rgb(0, 102, 204);
     }
+
+    .text p {
+        font-size: 12px;
+        color: gray;
+    }
+
     .signup-button p {
         text-align: center;
         font-size: 18px;
@@ -114,6 +125,19 @@
     .signup-button p a {
         text-decoration: none;
         color: rgb(27, 84, 183);
+        opacity: 0.65;
+    } 
+
+    .signup-button p a:hover{
         opacity: 1;
-    }   
+    }
+
+    @media (max-width:900px){
+        .container {
+        width:90%;
+        }
+        
+    }
+    
+    
 

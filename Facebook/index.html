@@ -9,21 +9,21 @@
 </head>
 
 <body>
-
+<div>
     <h1>Facebook</h1>
     <div class="container">
 
         <div class="Create-account">
             <h2>Create a new account</h2>
             <p>It's quick and easy.</p>
-            <p id="Sign-Up-Successful!" style="color: green;" ></p>
+            <p id="Sign-Up-Successfull"></p>
         </div>
         <hr>
         <div class="user-name">
-            <div class="fname">
+            <div class="fname" id="Fname-div">
                 <input type="text" name="firstname" id="FName" placeholder="First name">
             </div>
-            <div class="lname">
+            <div class="lname" id="Lname-div">
                 <input type="text" name="lastname" id="LName" placeholder="Last name">
             </div>
             
@@ -35,7 +35,7 @@
         
         <div class="email-password">
         <div>
-            <input type="email" name="email" id="email" placeholder="Email address or phone number">
+            <input type="email" name="email" id="Email" placeholder="Email address or phone number">
         </div>
         <p id="emailError" ></p>
         <div>
@@ -46,15 +46,15 @@
         gender:
         <br>
         <div class="gender">
-            <div>
+            <div id="male-div">
                 <input type="radio" name="gender" id="male"checked >
                 <label for="male">Male</label>
             </div>
-            <div>
+            <div id="female-div">
                 <input type="radio" name="gender" id="female" >
                 <label for="female">Female</label>
             </div>
-            <div>
+            <div id="custom-div">
                 <input type="radio" name="gender" id="custom">
                 <label for="custom">Custom</label>
 
@@ -155,7 +155,7 @@
        
     </div>
 
-
+</div>
 <script src="SignUp.js"></script>
 </body>
 

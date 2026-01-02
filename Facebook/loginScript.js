@@ -8,27 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = document.getElementById('message');
     
 
-    // LogIn.addEventListener("click", function () {
-    //     const emailValue = Email.value;
-    //     const passwordValue = Password.value;
-    //     if (emailValue==""){
-    //         Emails.textContent = "Please enter your Email.";
-    //         Emails.style.color = "red";
-             
-            
-    //     } 
-    //     else if (passwordValue=="") {
-    //         Passwords.textContent = "Please enter your Password.";
-    //         Passwords.style.color = "red";
-    //     } else {
-    //         localStorage.setItem("Email", emailValue);
-    //         localStorage.setItem("Password", passwordValue);
-    //         message.style.color = "green"; 
-    //         message.textContent = "Login Successful!";
-            
-    //     }
-
-    // });
     
     LogIn.addEventListener("click", function () {
 
@@ -43,6 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             message.style.color = "red"; 
             message.textContent = "Invalid Email or Password.";
+        }
+
+        // if(emailValue === ""){
+        //     Emails.textContent = "Please enter your Email.";
+        //     Emails.style.color = "red";
+        // }else{
+        //     Emails.textContent = "";
+        // }
+        // if(passwordValue === ""){
+        //     Passwords.textContent = "Please enter your Password.";
+        //     Passwords.style.color = "red";
+        // }else{
+        //     Passwords.textContent = "";
+        // }
+
+        if(emailValue == storedEmail && passwordValue == storedPassword){
+            Email.value = "";
+            Password.value = "";
         }
     });
 });

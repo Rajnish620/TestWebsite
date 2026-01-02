@@ -1,19 +1,21 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-const Fiestname = document.getElementById("FName");
+const Firstname = document.getElementById("FName");
 const Lastname = document.getElementById("LName");
 const FirstnameError = document.getElementById("firstnameError");
 const LastnameError = document.getElementById("lastnameError");
 const SignUpButton = document.getElementById("signupButton");
-const SignUpSuccess = document.getElementById("Sign-Up-Successful!");
-const email = document.getElementById("email");
+const SignUpSuccess = document.getElementById("Sign-Up-Successfull");
+const email = document.getElementById("Email");
 const emailError = document.getElementById("emailError");
 const Password = document.getElementById("Password");
 const PassError = document.getElementById("PassError");
 const male = document.getElementById("male");
+const maleDiv = document.getElementById("male-div");
 const female = document.getElementById("female");
+const femaleDiv = document.getElementById("female-div");
 const custom = document.getElementById("custom");
-const GenderError = document.getElementById("GenderError");
+const customDiv = document.getElementById("custom-div");
 
 
 
@@ -24,7 +26,7 @@ const GenderError = document.getElementById("GenderError");
 
 SignUpButton.addEventListener("click", function () {
     
-    const firstNameValue = Fiestname.value;
+    const firstNameValue = Firstname.value;
     const lastNameValue = Lastname.value;
    
 
@@ -54,36 +56,53 @@ SignUpButton.addEventListener("click", function () {
         localStorage.setItem("Email", email.value);
         localStorage.setItem("Password", Password.value);
         localStorage.setItem("Gender", male.checked ? "Male" : female.checked ? "Female" : "Custom");
-        SignUpSuccess.textContent = "Sign-Up Successful!";
+        SignUpSuccess.style.color = "green";
+        SignUpSuccess.textContent = "Sign-Up Successfull";
     }
 
-    if(male.checked || female.checked || custom.checked){
-        GenderError.style.color = "green";
-        GenderError.textContent="Success";
- 
+    if(male.checked){
+        maleDiv.style.border = "2px solid green";
+
+    } else if(female.checked){
+        femaleDiv.style.border = "2px solid green";
+
+    } else if(custom.checked){
+        customDiv.style.border = "2px solid green";
     }
 
     
    if(firstNameValue !=""){
     FirstnameError.textContent = "";
+    Firstname.style.border = "2px solid green";
+
     }
     if(lastNameValue !=""){
     LastnameError.textContent = "";
+    Lastname.style.border = "2px solid green";
     }
-    if(firstNameValue !="" &&lastNameValue !=""){
-    FirstnameError.style.color = "green";
-    FirstnameError.textContent = "Success!";
-
-    }
-
     if(email.value !=""){
-    emailError.style.color = "green";
-    emailError.textContent = "Success!";
+    emailError.textContent ="";
+    email.style.border = "2px solid green";
     }
     if(Password.value !=""){
-    PassError.style.color = "green";
-    PassError.textContent = "Success!";
+    PassError.textContent = "";
+    Password.style.border = "2px solid green";
     }
-   
+
+    if(firstNameValue !="" && lastNameValue !="" && email.value !="" && Password.value !=""){
+        Firstname.value= "";
+        Lastname.value= "";
+        email.value= "";
+        Password.value= "";
+    }
+
+    
+
+
+    
+
+  
+    
+    
 });
 });
