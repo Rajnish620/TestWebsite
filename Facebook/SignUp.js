@@ -54,7 +54,7 @@ SignUpButton.addEventListener("click", function () {
         localStorage.setItem("Email", email.value);
         localStorage.setItem("Password", Password.value);
         localStorage.setItem("Gender", male.checked ? "Male" : female.checked ? "Female" : "Custom");
-        SignUpSuccess.textContent = "Sign Up Successful!";
+        SignUpSuccess.textContent = "Sign-Up Successful!";
     }
 
     if(male.checked || female.checked || custom.checked){
